@@ -13,6 +13,9 @@ isort = "^5.13.2"
 black = "^24.4.2"
 taskipy = "^1.12.2"
 mkdocs = "^1.6.0"
+mkdocs-mermaid2-plugin = "^1.1.1"
+mkdocs-material = "^9.5.19"
+mkdocstrings = {extras = ["python"], version = "^0.25.0"}
 
 
 [build-system]

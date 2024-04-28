@@ -1,1 +1,9 @@
 site_name: My Docs
+
+theme:
+  name: material
+
+plugins:
+  - search
+  - mermaid2
+  - mkdocstrings
