@@ -17,7 +17,7 @@ cd data-stack
 
 2. remova a conexão com o repositório remoto do modelo:
 ```
-git remote remove origin
+rm -rf .git
 ```
 
 3. Conecte o repositório local ao novo repositório e envie o conteudo:
