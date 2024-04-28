@@ -11,7 +11,7 @@ Para começar a usar o repositório, siga estas etapas:
 1. clone o repositório
 
 ```
-git clone https://github.com/seu-usuario/data-stack.git
+git clone https://github.com/cllaud99/data-stack.git
 cd data-stack
 ```
 
