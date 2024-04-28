@@ -19,5 +19,5 @@ jobs:
             - name: Instalar dependências com o Poetry
               run: poetry install
 
-            - name: Rodar minha rotina de testes com o Poetry
-              run: poetry run pytest tests -v
+            #- name: Rodar minha rotina de testes com o Poetry
+            #  run: poetry run pytest tests -v

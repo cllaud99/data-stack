@@ -101,3 +101,8 @@ Este contêiner expõe a porta 8501 e usa poetry para gerenciar as dependências
 O projeto também inclui um exemplo de arquivo .dockerignore para evitar que arquivos desnecessários sejam incluídos na imagem Docker:
 
 Lembre-se de usar este arquivo para evitar que arquivos sensíveis ou desnecessários sejam incluídos no contêiner Docker.
+
+
+## CI
+
+Revise a apague os comentários no .github/workflows/CY.yml
