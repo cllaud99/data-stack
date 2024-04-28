@@ -1,1 +1,5 @@
-.venv
+# Ignora arquivos desnecessários para o Docker
+*.pyc
+__pycache__
+.DS_Store
+.env

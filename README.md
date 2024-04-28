@@ -53,3 +53,38 @@ Com taskipy, algumas tarefas comuns são automatizadas para facilitar o desenvol
 - test: Executa os testes com pytest.
 - run: Executa o código principal do projeto.
 - doc: Inicia o servidor de documentação mkdocs.
+
+
+## Docker
+
+Este projeto inclui um Dockerfile para criar um contêiner Docker. Para construir e executar o contêiner, siga estas etapas:
+
+1. Construa o contêiner Docker:
+
+```
+docker build -t data-stack .
+```
+
+2. Execute o contêiner Docker
+
+```
+docker run -p 8501:8501 data-stack
+```
+
+Este contêiner expõe a porta 8501 e usa poetry para gerenciar as dependências e executar tarefas definidas no projeto.
+
+## Dockerfile
+
+- Usa uma imagem base do Python 3.11.5.
+- Instala o Poetry para gerenciar dependências.
+- Copia todos os arquivos do projeto para o diretório /src.
+- Define o diretório de trabalho para /src.
+- Instala as dependências com o Poetry.
+- Expõe a porta 8501.
+- Define um comando de entrada que executa a tarefa "run" definida no arquivo taskipy.
+
+## dockerignore
+
+O projeto também inclui um exemplo de arquivo .dockerignore para evitar que arquivos desnecessários sejam incluídos na imagem Docker:
+
+Lembre-se de usar este arquivo para evitar que arquivos sensíveis ou desnecessários sejam incluídos no contêiner Docker.
