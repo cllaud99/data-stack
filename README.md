@@ -1,4 +1,4 @@
-# Data-stack padrão
+# Repositório template Data-stack
 
 ## Objetivo
 
@@ -15,14 +15,27 @@ git clone https://github.com/seu-usuario/data-stack.git
 cd data-stack
 ```
 
-2. instale as dependencias com poetry
+2. remova a conexão com o repositório remoto do modelo:
+```
+git remote remove origin
+```
+
+3. Conecte o repositório local ao novo repositório e envie o conteudo:
+
+```
+git init
+git remote add origin https://github.com/usuario/novo-repositório.git
+git push -u origin main
+```
+
+4. instale as dependencias com poetry
 Certifique-se de ter o Poetry instalado. Se não tiver, siga as instruções [aqui](https://python-poetry.org/docs/).
 
 ```
 poetry install
 ```
 
-3. Renomei o .env-exemple para .env
+5. Renomei o .env-exemple para .env
 
 
 ## Estrutura do Repositório
